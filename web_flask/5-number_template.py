@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 """
 starts a Flask web application
+Routes:
+    / - display "Hello HBNB!"
+    /hbnb - display "HBNB"
+    /c/<text> - display "C <text>"
+    /python/<text> - display "Python is cool"
+    /number/<n> - display n if integer
+    /number_template/<n> - display a HTML page if n is int
 """
 
 from flask import Flask, render_template
